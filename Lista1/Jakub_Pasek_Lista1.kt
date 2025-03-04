@@ -1,4 +1,5 @@
 //Jakub Pasek PUM1 Lista 1
+//347426
 //Zadanie 1
 fun num(number : Int) : Unit?
 {
@@ -32,11 +33,11 @@ fun num(number : Int) : Unit?
 
 //zadanie 2
 fun isPalindrome(word : String) : Boolean?
-{   
+{
     val word_length = word.length - 1
     var start_of_word = 0
     var end_of_word = word_length
-    val for_range = word_length / 2 
+    val for_range = word_length / 2
     for(i in start_of_word..for_range)
     {
         if(word[start_of_word] != word[end_of_word])
@@ -55,7 +56,7 @@ fun isPalindrome(word : String) : Boolean?
 
 //Zadanie 3
 fun printPascal(height : Int) : Unit?
-{   
+{
     var pascal_array : Array<Array<Int>> = emptyArray()
     for(i in 0..height-1)
     {
@@ -67,7 +68,7 @@ fun printPascal(height : Int) : Unit?
                 temp_arr += 1
             }
             else
-            {   
+            {
                 val value = pascal_array[i-1][j-2] + pascal_array[i-1][j-1]
                 temp_arr += value
             }
