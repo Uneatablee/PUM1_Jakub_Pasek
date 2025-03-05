@@ -20,6 +20,10 @@ fun num(number : Int) : Unit?
     {
         output = output + "jedenascie"
     }
+    if(number % 13 == 0)
+    {
+        output = output + "trzynascie"
+    }
 
     if(output == "")
     {
