@@ -129,7 +129,7 @@ fun checkArmstrong(number : Int) : Boolean?
 {
     var calculated_result = 0;
     var number_string = number.toString()
-    //val size = number_string.size
+
     for(i in 0..number_string.length - 1)
     {
         calculated_result += Math.pow((number_string[i].digitToInt()).toDouble(), number_string.length.toDouble()).toInt()
